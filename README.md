@@ -7,4 +7,5 @@ Este é um jogo criativo e envolvente desenvolvido para proporcionar momentos de
 Para inicializa-lo siga os comandos
 
 npm install
+
 npm start
