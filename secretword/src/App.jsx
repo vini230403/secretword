@@ -123,14 +123,14 @@ const pickedWordAndCategory = useCallback(() => {
     const uniqueLetters = [...new Set(letters)]
 
     // Win condition
-    if(guessedLetters.length === uniqueLetters.length) {
+    if(guessedLetters.length === uniqueLetters.length && gameStage === "game") {
       // Add score
       setScore((actualScore) => actualScore += 100 )
 
       // Restart game with new word
       startGame()
     }
-  }, [guessedLetters, letters, startGame])
+  }, [guessedLetters, letters, startGame, gameStage])
 
 // Restarts the game
   const retryGame = () => {
